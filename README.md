@@ -1,23 +1,15 @@
-# Repository template
-A template enabled repository, including all necesary files to open source.
-(create an issue with the following content if you want to track the repo configuration)
+# nouns-cadence
 
-## Repository settings and configuration
-- [ ]  Repository info
-    - [ ]  Add repo description
-    - [ ]  Update website to https://onflow.org
-    - [ ]  Add relevant repository topics (i.e. `blockchain` `onflow`, etc)
-    - [ ]  Check issue labels on `.github/labels.yml` and do any commit to main to get them synced
-- [ ]  Define merge workflow (create new branch protection rule)
-    - [ ]  `main` branch rule:
-        - [ ]  **Require pull request reviews before merging (2 approving reviews)**
-            - [ ]  **Require review from Code Owners**
-        - [ ]  **Require status checks to pass before merging**
-            - [ ]  **Require branches to be up to date before merging**
-        - [ ]  **Require linear history**
-        - [ ]   **Restrict who can push to matching branches**
-            - [ ]  Choose `onflow/flow` team
+This is a Cadence implementation of the [Nouns protocol](https://nouns.wtf/), 
+a generative avatar art collective on the Ethereum blockchain.
 
-- [ ]  Add necessary team members, adjust access levels
-    - [ ]  `onflow/flow-admin` ⇒ Admin access
-    - [ ]  `onflow/flow-engineering ` ⇒ Write access
+This project is intended for educational purposes and to educate learners
+about the Cadence programming language via a recreation of a popular Ethereum
+project.
+
+## Quickstart
+
+You can find the contracts in the `contracts/` directory and common transactions
+in the `transactions/` directory. 
+
+Tests and packages will be added soon.

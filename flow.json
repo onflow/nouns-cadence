@@ -1,0 +1,48 @@
+{
+  "emulators": {
+    "default": {
+      "port": 3569,
+      "serviceAccount": "emulator-account"
+    }
+  },
+  "contracts": {
+    "NonFungibleToken": {
+      "source": "./contracts/utility/NonFungibleToken.cdc",
+      "aliases": {
+        "emulator": "0xf8d6e0586b0a20c7",
+        "testnet": "0x631e88ae7f1d7c20",
+        "mainnet": "0x1d7e57aa55817448"
+      }
+    },
+    "MetadataViews": "./contracts/utility/MetadataViews.cdc",
+    "ViewResolver": "./contracts/utility/ViewResolver.cdc",
+    "NounsDescriptor": "./contracts/NounsDescriptor.cdc",
+    "NounsToken": "./contracts/NounsToken.cdc",
+    "GenericAuction": "./contracts/GenericAuction.cdc",
+    "NounsAuctionHouse": "./contracts/NounsAuctionHouse.cdc",
+    "FungibleToken": "./contracts/utility/FungibleToken.cdc"
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "0xf8d6e0586b0a20c7",
+      "key": "1a05ba433be5af2988e814d1e4fa08f1574140e6cb5649a861cc6377718c51be"
+    }
+  },
+  "deployments": {
+    "emulator": {
+      "emulator-account": [
+        "NonFungibleToken",
+        "ViewResolver",
+        "MetadataViews",
+        "FungibleToken",
+        "NounsDescriptor",
+        "NounsToken"
+      ]
+    }
+  }
+}
